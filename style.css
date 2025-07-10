@@ -1,51 +1,122 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  background: #fdfdfd;
+  color: #222;
 }
 
-header {
-  background: #222;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #124c2f;
   color: #fff;
-  padding: 20px;
-  text-align: center;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  list-style: none;
   gap: 20px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.login-btn {
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
 }
 
 .hero {
-  padding: 50px;
   text-align: center;
+  background: #124c2f;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.hero h1 span {
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: #f0c36d;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tiers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background: #fdfdfd;
+}
+
+.tier-card {
+  background: #fff;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.tier-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
   background: #fff;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
+.testimonial {
+  width: 200px;
+  text-align: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 footer {
+  background: #124c2f;
+  color: white;
   text-align: center;
   padding: 20px;
-  background: #222;
-  color: white;
+}
+
+.socials img {
+  width: 20px;
+  margin: 0 10px;
 }
