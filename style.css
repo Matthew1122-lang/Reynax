@@ -1,122 +1,112 @@
-/* style.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: #fdfdfd;
-  color: #222;
+  background-color: #fdfdfd;
+  color: #111;
 }
 
 .navbar {
+  background-color: #054b2a;
+  color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  background-color: #124c2f;
-  color: #fff;
   align-items: center;
+  padding: 20px;
 }
 
 .logo {
+  font-size: 1.5em;
   font-weight: bold;
-  font-size: 24px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .login-btn {
-  border: 1px solid #fff;
+  border: 1px solid white;
   padding: 6px 12px;
   border-radius: 5px;
 }
 
 .hero {
   text-align: center;
-  background: #124c2f;
+  background-color: #054b2a;
   color: white;
   padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 36px;
-  line-height: 1.4;
+  font-size: 2.5em;
 }
 
-.hero h1 span {
-  font-weight: bold;
-}
-
-.primary-btn {
-  background: #f0c36d;
-  color: #000;
-  padding: 12px 24px;
+.hero .join-btn {
+  background-color: #f1c04c;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
   border-radius: 6px;
-  display: inline-block;
-  margin-top: 20px;
+  font-size: 1em;
   text-decoration: none;
-  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .tiers {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 20px;
+  justify-content: space-around;
   flex-wrap: wrap;
-  background: #fdfdfd;
+  padding: 40px 20px;
 }
 
-.tier-card {
-  background: #fff;
+.card {
+  background: white;
   padding: 20px;
-  width: 180px;
+  border-radius: 12px;
+  width: 220px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border-radius: 10px;
-}
-
-.tier-card img {
-  width: 40px;
-  margin-bottom: 10px;
 }
 
 .testimonials {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
   flex-wrap: wrap;
-  background: #fff;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
 }
 
 .testimonial {
-  width: 200px;
   text-align: center;
+  margin: 20px;
 }
 
 .testimonial img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
   object-fit: cover;
 }
 
-footer {
-  background: #124c2f;
+.footer {
+  background-color: #054b2a;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-.socials img {
-  width: 20px;
+.footer .socials img {
   margin: 0 10px;
 }
